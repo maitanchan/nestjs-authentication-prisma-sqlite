@@ -5,21 +5,13 @@ import { JwtModule } from '@nestjs/jwt';
 
 @Module({
 
-  imports: [
-    JwtModule.register({}),
-  ],
+  imports: [JwtModule.register({}),],
 
-  controllers: [
-    UserController
-  ],
+  controllers: [UserController],
 
-  providers: [
-    UserService
-  ],
+  providers: [UserService],
 
-  exports: [
-    UserService
-  ]
+  exports: [UserService]
 
 })
 export class UserModule { }

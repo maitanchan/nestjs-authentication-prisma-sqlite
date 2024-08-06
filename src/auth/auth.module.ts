@@ -7,17 +7,16 @@ import { UserModule } from '../user/user.module';
 @Module({
 
   imports: [
+
     JwtModule.register({}),
+
     UserModule
+
   ],
 
-  controllers: [
-    AuthController
-  ],
+  controllers: [AuthController],
 
-  providers: [
-    AuthService
-  ]
+  providers: [AuthService]
 
 })
 export class AuthModule { }
